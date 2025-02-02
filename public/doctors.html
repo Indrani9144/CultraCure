@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Doctor | CulturaCare</title>
+    <link rel="stylesheet" href="/CultraCare/styles.css">
+    <script src="/CultraCare/script.js"></script>
+    </head>
+<body>
+
+    <header>
+        <nav>
+            <h1>CulturaCare</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Find a Doctor</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="diet.html">Diet Plans</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="doctor-search">
+        <h2>Find a Doctor</h2>
+        <input type="text" id="doctor-search" placeholder="Search by name or specialty..." onkeyup="searchDoctors()">
+    </section>
+
+    <section class="doctor-list">
+        <div class="doctor">
+            <img src="images/doctor1.jpg" alt="Dr. Ananya Sharma">
+            <h3>Dr. Ananya Sharma</h3>
+            <p>Cardiologist | Chief Medical Officer | 10+ years experience in public health</p>
+            <button class="book-doctor">Book Appointment</button>
+        </div>
+        <div class="team-member">
+            <img src="images/doctor2.jpg" alt="Dr. Ravi Kapoor">
+            <h3>Dr. Ravi Kapoor</h3>
+            <p>Nutritionist | Expert in dietary planning & wellness</p>
+            <button class="book-doctor">Book Appointment</button>
+
+        </div>
+    </section>
+
+
+</body>
+</html>

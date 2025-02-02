@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customized Diet Plan | CulturaCare</title>
+    <link rel="stylesheet" href="/CultraCare/styles.css">
+    <script src="/CultraCare/script.js"></script>
+    </head>
+<body>
+
+    <header>
+        <nav>
+            <h1>CulturaCare</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Find a Doctor</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="diet.html">Diet Plans</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="diet-plan-container">
+        <h2>Customize Your Diet Plan</h2>
+        
+        <form id="diet-form">
+            <label for="goal">Your Goal:</label>
+            <select id="goal">
+                <option value="weight-loss">Weight Loss</option>
+                <option value="muscle-gain">Muscle Gain</option>
+                <option value="balanced">Balanced Diet</option>
+            </select>
+
+            <label for="preference">Food Preference:</label>
+            <select id="preference">
+                <option value="vegetarian">Vegetarian</option>
+                <option value="non-vegetarian">Non-Vegetarian</option>
+                <option value="vegan">Vegan</option>
+            </select>
+
+            <button type="submit">Generate Diet Plan</button>
+        </form>
+
+        <div id="diet-result" class="hidden"></div>
+    </section>
+
+</body>
+</html>
+

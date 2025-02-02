@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum</title>
+    <link rel="stylesheet" href="/CultraCare/styles.css">
+    <script src="/CultraCare/script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>CulturaCare</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Find a Doctor</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <li><a href="diet.html">Diet Plans</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="community">
+        <h2>Community Support</h2>
+        <input type="text" id="search" placeholder="Search discussions..." onkeyup="searchPosts()">
+
+        <div class="create-post">
+            <h3>Start a Discussion</h3>
+            <textarea id="post-content" placeholder="Ask a health-related question..."></textarea>
+            <button  id="post-btn" >Post</button>
+        </div>
+
+        <div class="discussion-list">
+            <h3>Recent Discussions</h3>
+            <ul id="post-container">
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CulturaCare | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const postButton = document.getElementById("post-btn");
+            if (postButton) {
+                postButton.addEventListener("click", createPost);
+            }
+        });
+    </script>
+</body>
+</html>
